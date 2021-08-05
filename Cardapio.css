@@ -1,0 +1,98 @@
+#menu_superior{
+
+    background: gainsboro; 
+    width: 100%; 
+    height: 200px;
+    background-image: url(https://img.freepik.com/fotos-gratis/pizza-de-pepperoni-saboroso-em-um-fundo-concreto-preto_79782-102.jpg?size=626&ext=jpg&ga=GA1.2.2101195155.1627430400);
+    position: fixed;
+    top: 0px;
+    /* 0px do topo (colado no topo) */
+    /* O banner estava com uma margem, entao precisa usar o top. Na tabela nao precisa pq ela já ajeita automaticamente. */
+    left: 0px;
+    /* 0px do left (colado na esquerda) */
+    text-align: center;
+    box-shadow: 0px 5px 20px 0px gray;
+    /* Sombra da caixa onde tem a imagem e o titulo */
+}
+
+#menu_esquerdo{
+
+    background: gainsboro; 
+    width: 300px; 
+    float: left; 
+    /* float left permite que elementos fiquem ao lado deles, pois a div só poe um embaixo do outro */
+    height: 100vh;
+    /* 100vh pra ficar cumprido */
+    display: block;
+    border: 1px solid darkgray;
+    border-radius: 0px 10px 0px 0px; 
+    position: fixed;
+    left: 0px;
+    padding-left: 10px;
+}
+
+#conteudo{
+ 
+    height: 100vh;
+    margin-top: 220px;
+    margin-left: 300px;
+}
+
+#titulo_MS{
+   
+    color: white;
+    /* color para mudar a cor da fonte e background para mudar a cor do fundo de algo. */
+
+    /* A cor branca nao ficou legal, entao vamos aumentar e aplicar uma sombra a ela.
+    Posso ver como vai ficar aplicando diretamente no site (inspecionando) e dps codifico aqui*/
+    font-size: 100px;
+    text-shadow: 1px 20px 4px black;
+    display: block;
+    line-height: 60px;
+    /* para centralizar a fonte dentro da figura */
+    
+}
+
+.pizza{
+   
+    background: gainsboro;
+    margin: 20px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-block-end: 20px;
+}
+
+#menu_esquerdo li a{
+
+    background: white;
+    display: block;
+    height: 40px;
+    margin-bottom: 10px;
+    /* para separar em linhas */
+    padding-left: 10px;
+    line-height: 40px;
+    text-decoration: none;
+    /* para tirar o azul sublinhado do link */
+    color: black;
+    transition: 1s;
+    /* O tempo que leva para aplicar as mudanças */
+
+   }
+
+   #menu_esquerdo li a:hover{
+    /* Mudanças somente quando passar o mouse sobre os links */
+
+ font-weight: bold;
+ /* Quando passar por cima vai ficar negrito */
+
+ background: black;
+ color: coral;
+
+}
+
+#desenvolvido{
+
+    padding-left: 20px;
+    padding-block-end: 20px;
+}
